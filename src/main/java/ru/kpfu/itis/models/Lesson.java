@@ -59,7 +59,7 @@ public class Lesson {
         try {
             this.date = formatter.parse(date);
         } catch (ParseException e) {
-            e.printStackTrace();
+            throw new IllegalArgumentException(e);
         }
     }
 

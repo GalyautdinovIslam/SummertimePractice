@@ -26,7 +26,7 @@ public class Course {
             this.dateStart = formatter.parse(dateStart);
             this.dateEnd = formatter.parse(dateEnd);
         } catch (ParseException e) {
-            e.printStackTrace();
+            throw new IllegalArgumentException(e);
         }
     }
 
@@ -37,7 +37,7 @@ public class Course {
             this.dateStart = formatter.parse(dateStart);
             this.dateEnd = formatter.parse(dateEnd);
         } catch (ParseException e) {
-            e.printStackTrace();
+            throw new IllegalArgumentException(e);
         }
     }
 
